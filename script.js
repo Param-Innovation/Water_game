@@ -439,7 +439,10 @@ const handleTreasures = () => {
   }
 };
 
-
+function returnback(){
+ window.location.reload();
+   
+}
 // Animation Loop
 // const animate = () => {
 //   ctx.clearRect(0, 0, canvas.width, canvas.height);
