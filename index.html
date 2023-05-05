@@ -8,6 +8,7 @@
   <title>Fish Game</title>
   <link rel="stylesheet" href="styles.css" />
   <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
+  <link rel="stylesheet" href="b-buruh-ngepath-font/BuruhNgepath-WyKqG.otf">
 </head>
 
 <body>
@@ -41,10 +42,11 @@
           </div>
         </div>
         <div class="titleGame">
-          <p>Aqua Quest</p>
+          <div class="titleImage"><p>Aqua Quest</p></div>
+          
         </div>
 
-        <div >
+        <div class="description0">
           <div class="description">
             <P id="description1">Swim through the ocean and collect bubbles and food while avoiding dangerous obstacles
               in this underwater
@@ -72,9 +74,15 @@
           </div>
         </div>
         <div class="description">
-          <P id="description1">Score:<span id="yourScore"></span>
-    <P>
+          <div class="retry" onclick="returnback()">
+            <img src="retry.png" alt="retry">
+          </div>
+         <div id="diplayScore"> <div id="des"><p id="description2">Score:</p>
+         </div><div class="coinPlusScore"><div class="coinImage"><img src="coin.png" alt="coin"><p id="yourScore"></p></div></div></div>
+           
         </div>
+       
+
       </div>
 
 
