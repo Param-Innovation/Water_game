@@ -1,8 +1,16 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'DM Sans';
+  /* font-size: 105%; */
 }
 
 body {
@@ -40,7 +48,7 @@ body {
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  gap:10%;
+  /* gap:10%; */
   /* display: none; */
   /* border: 1px solid black; */
   align-items: center;
@@ -71,7 +79,7 @@ body {
   justify-content: center;
   align-items: center;
   color: wheat;
-  font-size: 150%;
+  font-size: 130%;
   font-weight: 800;
   text-shadow: 2px 2px 8px grey;
  
@@ -82,7 +90,19 @@ body {
  
  height: 30%;
 }
+#diplayScore{
+  width: 30%;
+  text-align: justify;
+  font-size: larger;
+  color: whitesmoke;
+  font-weight: 600;
+  background-color: rgb(49 100 16); ;
+  backdrop-filter: blur(49px);
+  border-radius: 20px;
+  padding: 10px;
+}
 #description1{
+  /* width: 30%; */
   text-align: justify;
   font-size: larger;
   color: rgb(105, 15, 18);
@@ -90,7 +110,7 @@ body {
   background-color: rgb(31,218,215,0.4) ;
   backdrop-filter: blur(49px);
   border-radius: 20px;
-  padding: 9px;
+  padding: 10px;
 }
 .title{
  
@@ -288,12 +308,91 @@ body {
   font-weight: 800;
   text-shadow: 2px 2px 8px grey;
   /* padding: 2rem; */
-  margin-top: 52px;
+  margin-top: 110px !important;
   
   margin-left: 30px;
+  /* color: blue; */
+  @font-face { font-family: BuruhNgepath-WyKqG; src: url('b-buruh-ngepath-font/BuruhNgepath-WyKqG.otf'); } 
 
 }
-@media only screen and (max-width: 430px) {
+#diplayScore{
+  display:flex;
+  flex-direction: column;
+}
+#description2{
+ 
+}
+#des{
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid white;
+}
+.coinImage{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap:10%;
+  padding: 3px;
+}
+.coinPlusScore{
+  display: flex;
+
+}
+.coinImage img{
+  width: 20%;
+}
+.retry{
+  width: 100%;
+  height: 100%;
+}
+.retry img{
+  width: 20%;
+  height:100%
+}
+.titleImage>p{
+  FONT-FAMILY: 'Permanent Marker';
+}
+@media only screen and (width: 1024px) {
+  .bacteria {
+    display: flex;
+    justify-content: space-between;
+    height: 30%;
+  }
+  .dialogbox1{
+    width: 100%;
+    height: 100%;
+   }
+   .dialogbox{
+    background-size: 100% 100%;
+   
+   }
+   .titleImage{
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: wheat;
+    font-size: 150%;
+    font-weight: 800;
+    text-shadow: 2px 2px 8px grey;
+    FONT-FAMILY: 'Permanent Marker';
+
+   }
+  .titleImage>p{
+    FONT-FAMILY: 'Permanent Marker';
+  }
+   #gameOver{
+  
+    margin-top: 121px;
+
+   }
+}
+
+@media only screen and (max-width: 821px) {
+  *{
+    font-size: 105%;
+  }
   .bacteria {
     display: flex;
     justify-content: space-between;
@@ -302,6 +401,13 @@ body {
  .dialogbox1{
   width: 100%;
   height: 100%;
+ }
+ .dialogbox{
+  background-size: 100% 100%;
+ 
+ }
+ .description0{
+   margin-bottom: 20%;
  }
  .gameOverContainer{
   width: 100%;
@@ -314,4 +420,119 @@ body {
  #start{
   margin-top: 10px;
  }
+ .titleImage{
+  margin-top:65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: wheat;
+  font-size: 120%;
+  font-weight: 800;
+  text-shadow: 2px 2px 8px grey;
+  FONT-FAMILY: 'Permanent Marker';
+ }
+ .titleImage >p{
+  FONT-FAMILY: 'Permanent Marker';
+ }
+ .gameOverContainer{
+  margin-left: 0;
+  margin-top: 0;
+ }
+ #gameOver{
+  margin-top: 223px;
+  
+ }
+}
+
+@media only screen and (max-width: 426px) {
+    .dialogbox{
+      background-image: none;
+      background-size: contain;
+    }
+    .titleGame{
+      height: 40%;
+      width: 100%;
+      background-image: url("Param_Innovation_cartoon_style_vector_icon_png_dark_weathered_r_d932cd3b-3200-4880-8913-f87ba68ebef4-removebg-preview.png");
+      background-size: 100% 100%;
+      
+    }
+    .dialogbox{
+      gap:0%;
+    }
+   .titleImage{
+    margin-top: 20%;
+   }
+    .titleGame{
+      height: 150%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: wheat;
+      font-size: 80%;
+      font-weight: 800;
+      text-shadow: 2px 2px 8px grey;
+      
+    }
+    .gameOverContainer1{
+      background-image: none;
+    }
+    .gameover{
+      height: 100%;
+      width: 100%;
+      background-image: url("Param_Innovation_cartoon_style_vector_icon_png_dark_weathered_r_d932cd3b-3200-4880-8913-f87ba68ebef4-removebg-preview.png");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: wheat;
+      font-size: 80%;
+      font-weight: 800;
+      text-shadow: 2px 2px 8px grey;
+      
+    }
+    #gameOver{
+      margin-top:40px;
+    }
+
+}
+
+@media only screen and (max-width: 426px) {
+  .titleImage{
+    margin-top: 10%;
+  }
+  #gameOver{
+    margin-top: 35px;
+    font-size: medium;
+  }
+  .coinImage img{
+    width: 30%;
+  }
+}
+
+@media only screen and (width: 375px) {
+  #gameOver{
+   margin-top: 25px;
+  }
+ }
+
+@media only screen and (width: 540px) {
+ #gameOver{
+  margin-top: 165px;
+ }
+}
+
+
+@media only screen and (width: 1440px) {
+   #gameOver{
+    margin-top: 153px;
+
+   }
+}
+
+@media only screen and (width: 320px) {
+  .titleImage{
+  width: 110%;
+
+  }
 }
